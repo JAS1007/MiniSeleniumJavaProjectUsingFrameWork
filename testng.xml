@@ -4,10 +4,30 @@
 	<listeners>
 		<listener class-name="utils.SuiteListener"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-    <parameter name="browser" value="${browser}"></parameter>  <!-- Correct -->
+ <!--  <test thread-count="5" name="Test">
+    <parameter name="browser" value="${browser}"></parameter>
     <classes>
         <class name="qa.test.TestCase1"/>
     </classes>
+</test> -->
+
+<test thread-count="5" name="ChromeTest">
+	<parameter name="browser" value="chrome"></parameter>
+	<classes>
+		<class name="qa.test.TestCase1"/>
+	</classes>
 </test>
+<test thread-count="5" name="FirefoxTest">
+	<parameter name="browser" value="firefox"></parameter>
+	<classes>
+		<class name="qa.test.TestCase1"/>
+	</classes>
+</test>
+<test thread-count="5" name="EdgeTest">
+	<parameter name="browser" value="edge"></parameter>
+	<classes>
+		<class name="qa.test.TestCase1"/>
+	</classes>
+</test>
+
 </suite> <!-- Suite -->

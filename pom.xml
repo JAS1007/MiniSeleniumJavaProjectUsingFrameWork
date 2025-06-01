@@ -128,10 +128,10 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
-						<systemPropertyVariables>
-							<browser>${browser}</browser> <!--
-					When I make use of TestNG, helps to run the code in cmd-->
-						</systemPropertyVariables>
+					<!--	<systemPropertyVariables>
+							<browser>${browser}</browser> 
+					When I make use of TestNG, helps to run the code in cmd
+						</systemPropertyVariables> -->
 					</configuration>
 				</plugin>
 			</plugins>
